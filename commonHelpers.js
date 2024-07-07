@@ -4,10 +4,10 @@ import{S as f,i as m}from"./assets/vendor-0fc460d7.js";(function(){const t=docum
     <img cass="img" src="${n}" alt="${o}" loading="lazy"/>
     </a>
       <div class="info">
-        <p class="info-item"><b>Likes:</b>${s}</p>
-        <p  class="info-item"><b>Views:</b>${e}</p>
-        <p class="info-item"><b>Comments:</b>${r}</p>
-        <p class="info-item"><b>Downloads:</b>${i}</p>
+        <p class="info-item"><b>Likes </b>${s}</p>
+        <p  class="info-item"><b>Views </b>${e}</p>
+        <p class="info-item"><b>Comments </b>${r}</p>
+        <p class="info-item"><b>Downloads </b>${i}</p>
       </div>
 </div>`}function c(n,t="info"){m[t]({title:"",message:n,position:"topRight"})}function L(){document.querySelector(".gallery").innerHTML=""}const $=document.querySelector(".search-form"),l=document.querySelector("#search-input"),d=document.querySelector(".loader");$.addEventListener("submit",async n=>{n.preventDefault();const t=l.value.trim();if(!t){c("Please enter a search query.","warning");return}L(),w(),l.value="";try{const o=await y(t);if(u(),o.hits.length===0){c("Sorry, there are no images matching your search query. Please try again!","error");return}g(o.hits)}catch{u(),c("Error: ${error.message}")}});function w(){d.classList.remove("hidden")}function u(){d.classList.add("hidden")}
 //# sourceMappingURL=commonHelpers.js.map
