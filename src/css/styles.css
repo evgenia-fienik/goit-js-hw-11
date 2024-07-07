@@ -89,3 +89,8 @@
   flex-direction: column;
   align-items: center;
 }
+
+.loader{
+  display: none;
+  text-align: center;
+}
